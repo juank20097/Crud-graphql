@@ -1,0 +1,10 @@
+type Store {
+  id: ID!
+  nombre: String!
+  descripcion: String!
+}
+
+type Query {
+  listStores: [Store]
+  getStoreById(id: ID!): Store
+}
